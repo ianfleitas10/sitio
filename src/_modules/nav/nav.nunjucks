@@ -1,0 +1,14 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<nav class="{{_class"}}>
+  <ul>
+<li class="botonera-item"></li>
+<li class="botonera-item"></li>
+<li class="botonera-item"></li>
+<li class="botonera-item"></li>
+
+  </ul>
+{% endmacro %}

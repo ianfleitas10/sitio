@@ -1,0 +1,21 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import "_modules/link/link.nunjucks" as link %}
+
+{% block content %}
+<div class="main-container">
+  <div class="yeogurt-info">
+    <h1>Welcome to Yeogurt!</h1>
+
+  {{site.data.ejemplo.paises.pais[0].nombre}}
+
+    <img src="images/gatito3.jpg" alt="gatito en bowl">
+    <p>
+      Take a look at the {{link.content({
+        href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
+        text: 'documentation'
+      })}} and start mixing up something awesome.
+    </p>
+  </div>
+</div>
+{% endblock %}

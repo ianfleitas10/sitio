@@ -1,0 +1,14 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% block config %}
+  {# Correct base url pathing for this page #}
+  {% set baseUrl = '../' %}
+{% endblock %}
+
+{% block content %}
+     <h1>Pagina de contacto</h1>
+     <a href="../">volver a index</a>
+      <form action="" method="">
+        Nombre: <input type="text">
+      </form>
+{% endblock %}
